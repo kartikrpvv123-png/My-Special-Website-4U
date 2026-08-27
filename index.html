@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Go Out With Me?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <div class="sky-decor" aria-hidden="true">
+      <span class="spark s1">✦</span><span class="spark s2">✧</span>
+      <span class="spark s3">✦</span><span class="spark s4">+</span>
+      <span class="cloud cloud-a"></span><span class="cloud cloud-b"></span>
+    </div>
+
+    <section class="screen active" id="screen-home">
+      <div class="cat-card">
+        <img src="assets/pixel-cat.svg" alt="Cute pixel cat" />
+      </div>
+      <h1>WILL YOU GO<br>OUT WITH ME?</h1>
+      <p class="tiny-note">♡</p>
+      <div class="button-row">
+        <button class="pixel-btn yes-btn" id="yesBtn">YES <span>✦</span></button>
+        <button class="pixel-btn no-btn" id="noBtn">NO</button>
+      </div>
+      <p class="hint" id="noHint">Don't do this 😭</p>
+    </section>
+
+    <section class="screen" id="screen-date">
+      <div class="cat-card small">
+        <img src="assets/pixel-cat.svg" alt="Cute pixel cat" />
+        <span class="card-caption">Maybeeeee</span>
+      </div>
+      <h2>PICK A DATE</h2>
+      <p class="subtitle">Choose the day for our cute little plan.</p>
+      <input class="date-input" id="dateInput" type="date" aria-label="Choose a date">
+      <button class="pixel-btn continue-btn" id="dateContinue">CONTINUE →</button>
+    </section>
+
+    <section class="screen" id="screen-plan">
+      <div class="cat-card small">
+        <img src="assets/pixel-cat.svg" alt="Cute pixel cat" />
+        <span class="card-caption">Let's make a plan!</span>
+      </div>
+      <h2>WHAT WOULD YOU LIKE TO<br>DO?</h2>
+      <div class="choices">
+        <button class="choice" data-plan="Dinner Date">DINNER DATE</button>
+        <button class="choice" data-plan="Movie Night">MOVIE NIGHT</button>
+        <button class="choice" data-plan="Coffee & Walk">COFFEE & WALK</button>
+        <button class="choice" data-plan="Picnic">PICNIC</button>
+        <button class="choice" data-plan="Mini Golf">MINI GOLF</button>
+        <button class="choice surprise" data-plan="Surprise Me">SURPRISE ME</button>
+      </div>
+      <button class="pixel-btn lock-btn" id="lockBtn" disabled>LOCK IT IN 🔒</button>
+    </section>
+
+    <section class="screen final-screen" id="screen-final">
+      <div class="hearts" aria-hidden="true">♥ ♥ ♥</div>
+      <div class="cat-card">
+        <img src="assets/pixel-cat.svg" alt="Happy pixel cat" />
+      </div>
+      <h2>IT'S A DATE! 💗</h2>
+      <p class="subtitle" id="finalText">I can't wait!</p>
+      <div class="ticket">
+        <div><span>DATE</span><strong id="finalDate">—</strong></div>
+        <div><span>PLAN</span><strong id="finalPlan">—</strong></div>
+      </div>
+      <p class="letter">
+        You just made my day.<br>
+        See you soon, cutie ✨
+      </p>
+      <button class="pixel-btn restart-btn" id="restartBtn">START OVER ↻</button>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
